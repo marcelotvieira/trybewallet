@@ -6,4 +6,9 @@ const submitMail = (val) => ({
   logged: true,
 });
 
-export default submitMail;
+const currencies = (val) => ({
+  type: 'CURRENCIES',
+  currencies: val,
+});
+
+export { submitMail, currencies };
