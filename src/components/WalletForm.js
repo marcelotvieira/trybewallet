@@ -54,7 +54,7 @@ class WalletForm extends Component {
       method: '',
       tag: '',
       exchangeRates: {},
-      currency: '',
+      currency: 'USD',
       id: '',
     });
   };
@@ -99,7 +99,7 @@ class WalletForm extends Component {
               name="currency"
               onChange={ this.onInputChange }
             >
-              { (currData.reverse()).map((curr) => (
+              { currData.map((curr) => (
                 <option
                   value={ curr }
                   key={ curr }
