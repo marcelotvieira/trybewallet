@@ -11,4 +11,14 @@ const currencies = (val) => ({
   currencies: val,
 });
 
-export { submitMail, currencies };
+const expenses = (val) => ({
+  type: 'EXPENSES',
+  expenses: val,
+});
+
+const total = (val) => ({
+  type: 'TOTAL',
+  total: val,
+});
+
+export { submitMail, currencies, expenses, total };
