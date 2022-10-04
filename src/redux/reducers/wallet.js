@@ -25,5 +25,11 @@ export default function currencies(state = INITIAL_STATE, action) {
       total: state.total + action.total,
     });
   }
+  if (action.type === 'DELETE') {
+    return ({
+      ...state,
+      expenses: action.expenses,
+    });
+  }
   return state;
 }

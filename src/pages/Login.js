@@ -38,6 +38,7 @@ class Login extends React.Component {
     if (logged) return <Redirect to="/carteira" />;
     return (
       <div className="login">
+        <h2>Login:</h2>
         <form>
           <label htmlFor="email" aria-labelledby="email">
             Email:

@@ -21,4 +21,9 @@ const total = (val) => ({
   total: val,
 });
 
-export { submitMail, currencies, expenses, total };
+const deleteExp = (val) => ({
+  type: 'DELETE',
+  expenses: val,
+});
+
+export { submitMail, currencies, expenses, total, deleteExp };

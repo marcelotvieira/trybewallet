@@ -64,7 +64,7 @@ class WalletForm extends Component {
     const { value, description, currency, method, tag, id, exchangeRates } = this.state;
     console.log(id, exchangeRates);
     return (
-      <div>
+      <div className="wallet-form-contianer">
         <h2>Adicionar nova despesa:</h2>
         <form className="wallet-form">
           <label htmlFor="value" aria-labelledby="value">
