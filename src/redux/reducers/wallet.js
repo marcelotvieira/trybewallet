@@ -4,6 +4,8 @@ const INITIAL_STATE = {
   currencies: [],
   expenses: [],
   total: 0,
+  editExpense: {},
+  updatedExp: [],
 };
 
 export default function currencies(state = INITIAL_STATE, action) {
@@ -26,6 +28,18 @@ export default function currencies(state = INITIAL_STATE, action) {
     });
   }
   if (action.type === 'DELETE') {
+    return ({
+      ...state,
+      expenses: action.expense,
+    });
+  }
+  if (action.type === 'EDIT') {
+    return ({
+      ...state,
+      editExpense: action.editExpense,
+    });
+  }
+  if (action.type === 'UPDATE') {
     return ({
       ...state,
       expenses: action.expenses,
