@@ -14,12 +14,14 @@ class Header extends Component {
     }, 0);
 
     return (
-      <header>
+      <header className="header">
         <p data-testid="email-field">{ user.email }</p>
-        <span data-testid="total-field">
-          {parseFloat(total).toFixed(2)}
-        </span>
-        <p data-testid="header-currency-field">BRL</p>
+        <div className="header-wallet">
+          <span data-testid="total-field">
+            {parseFloat(total).toFixed(2)}
+          </span>
+          <p data-testid="header-currency-field">BRL</p>
+        </div>
       </header>
     );
   }

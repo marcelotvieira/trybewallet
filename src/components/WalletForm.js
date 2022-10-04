@@ -65,7 +65,8 @@ class WalletForm extends Component {
     console.log(id, exchangeRates);
     return (
       <div>
-        <form>
+        <h2>Adicionar nova despesa:</h2>
+        <form className="wallet-form">
           <label htmlFor="value" aria-labelledby="value">
             Valor:
             <input

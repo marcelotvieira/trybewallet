@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import React, { Component } from 'react';
+import './App.css';
 import store from './redux/store';
 import Login from './pages/Login';
 import Wallet from './pages/Wallet';
